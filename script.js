@@ -34,14 +34,14 @@ WARNING!!! WARNING!!!
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
 
-(function(){
+(function(window){
 
 
 
 var name = " ";
 
-var list = 0;
 
+var i;
 
 // STEP 10:
 // Loop over the names array and say either 'Hello' or "Good Bye"
@@ -49,10 +49,12 @@ var list = 0;
 // 'speak' method.
 // See Lecture 50, part 1
 
-while (list < names.length) {
 
-	if names[list][0]
 
+for (i = 0; i < names.length; i ++) {
+
+	name += names[i] + '<br>';
+   
 
 
 }
@@ -71,7 +73,7 @@ console.log(window.byeSpeaker);
 
 
 
-})();
+
 
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
@@ -80,7 +82,10 @@ console.log(window.byeSpeaker);
   // string object's 'toLowerCase' method on the result so we can compare
   // to lower case character 'j' afterwards.
   // Look up these methods on Mozilla Developer Network web site if needed.
-  // var firstLetter =
+  
+
+  var firstLetter = name.charAt(0).toLowerCase();
+
 
   // STEP 12:
   // Compare the 'firstLetter' retrieved in STEP 11 to lower case
@@ -99,6 +104,6 @@ console.log(window.byeSpeaker);
 
 
 
-//})();
+})();
 
 
