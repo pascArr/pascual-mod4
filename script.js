@@ -38,10 +38,7 @@ WARNING!!! WARNING!!!
 
 
 
-var name = " ";
 
-
-var i;
 
 // STEP 10:
 // Loop over the names array and say either 'Hello' or "Good Bye"
@@ -50,26 +47,30 @@ var i;
 // See Lecture 50, part 1
 
 
+// THIS PIECE OF CODE WORKS AS BASIC STRUCTURE FOR LOOP OVER LIST OF NAMES
+// AND RETURN THE FIRST LETTER OF EACH NAME AS LOWER CASE
+var name = "";
 
-for (i = 0; i < names.length; i ++) {
+var firstLetter = "" ;
 
-	name += names[i] + '<br>';
+var i;
+for (i = 0; i < names.length; i++) {
+    name += names[i] + "<br>";
    
-
-
+    firstLetter += names[i].charAt(0).toLowerCase() + "<br>";
 }
 
-for (list = 0; list < names.length; list ++){
-	name += names[list] + "<br>";
 
 
-}
-
-console.log(window.helloSpeaker);
-
-console.log(window.byeSpeaker);
+// TO RETURN RESULT CHOOSE WINDOW OR CONSOLE
+// END OF THE SNIPPET
 
 
+//console.log(window.helloSpeaker);
+
+//console.log(window.byeSpeaker);
+
+console.log(name);
 
 
 
@@ -84,8 +85,10 @@ console.log(window.byeSpeaker);
   // Look up these methods on Mozilla Developer Network web site if needed.
   
 
-  var firstLetter = name.charAt(0).toLowerCase();
+  //var firstLetter = name.charAt(0).toLowerCase();
 
+  console.log(firstLetter);
+  
 
   // STEP 12:
   // Compare the 'firstLetter' retrieved in STEP 11 to lower case
@@ -102,8 +105,8 @@ console.log(window.byeSpeaker);
 //  }
 //}
 
+window.name = name
 
-
-})();
+})(window);
 
 
