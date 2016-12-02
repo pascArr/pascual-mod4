@@ -51,14 +51,13 @@ WARNING!!! WARNING!!!
 // AND RETURN THE FIRST LETTER OF EACH NAME AS LOWER CASE
 var name = "";
 
-var firstLetter = "" ;
+
 
 var i;
 for (i = 0; i < names.length; i++) {
     name += names[i] + "<br>";
    
-    firstLetter += names[i].charAt(0).toLowerCase() + "<br>";
-}
+ }
 
 
 
@@ -84,10 +83,27 @@ console.log(name);
   // to lower case character 'j' afterwards.
   // Look up these methods on Mozilla Developer Network web site if needed.
   
+  
+  
+  function first (item, index){
 
-  //var firstLetter = name.charAt(0).toLowerCase();
+  var firstLetter = item.charAt(0).toLowerCase();
 
-  console.log(firstLetter);
+    if (firstLetter == 'j') {
+     return byeSpeaker + "<br>";
+} else { 
+    return helloSpeaker + "<br>";
+}
+
+
+    
+  }
+
+  names.forEach(first);
+
+  //var tipo = typeof names;
+
+  //console.log(tipo);
   
 
   // STEP 12:
@@ -105,7 +121,7 @@ console.log(name);
 //  }
 //}
 
-window.name = name
+window.name = name[i]
 
 })(window);
 
