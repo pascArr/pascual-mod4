@@ -32,8 +32,8 @@ var speakWord = "Hello";
 // (Note, Step 6 will be done in the SpeakGoodBye.js file.)
 
 
-	window.helloSpeaker = helloSpeaker;
-	window.name = name
+	window.helloSpeaker = helloSpeaker.speak;
+	
 
 
 })(window);

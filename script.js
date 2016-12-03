@@ -52,21 +52,21 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // AND RETURN THE FIRST LETTER OF EACH NAME AS LOWER CASE
 var name = "";
 
-
+var firstLetter = "";
 
 var i;
+
 for (i = 0; i < names.length; i++) {
-<<<<<<< HEAD
-    name += names[i] + '\n';
+
+    name = names[i] + '\n';
+
+    firstLetter = name.charAt() + '\n';
+
+
     
-     
     
-}
-=======
-    name += names[i] + "<br>";
-   
- }
->>>>>>> f9eaba0e52ccbb3e5694013c587dc9e8d5acf4af
+  
+    
 
 
 
@@ -84,33 +84,27 @@ for (i = 0; i < names.length; i++) {
   // string object's 'toLowerCase' method on the result so we can compare
   // to lower case character 'j' afterwards.
   // Look up these methods on Mozilla Developer Network web site if needed.
-  
-<<<<<<< HEAD
-  var firstLetter = name.charAt(0).toLowerCase();  
-  
-=======
-  
-  
-  function first (item, index){
 
-  var firstLetter = item.charAt(0).toLowerCase();
+ 
+  var vogal = firstLetter.toLowerCase();
+   
 
-    if (firstLetter == 'j') {
-     return byeSpeaker + "<br>";
-} else { 
-    return helloSpeaker + "<br>";
+    if((vogal == "j")){
+      
+        return byeSpeaker.speak;
+
+         
+    } else { 
+
+        return helloSpeaker.speak;
+       
+
+         
 }
+   
+} 
 
 
-    
-  }
-
-  names.forEach(first);
-
-  //var tipo = typeof names;
-
-  //console.log(tipo);
->>>>>>> f9eaba0e52ccbb3e5694013c587dc9e8d5acf4af
   
 
   // STEP 12:
@@ -120,22 +114,9 @@ for (i = 0; i < names.length; i++) {
   // name in the loop.
 
   
-    if (firstLetter === 'j') {
-      byeSpeaker.speak(name);
-        return window.name = name;
-  } else {
-      helloSpeaker.speak(name);
-        return window.name = name;
-        
-  }
 
-  
+window.name = name
 
-
-<<<<<<< HEAD
-=======
-window.name = name[i]
->>>>>>> f9eaba0e52ccbb3e5694013c587dc9e8d5acf4af
 
 })(window);
 
