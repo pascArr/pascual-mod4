@@ -56,11 +56,17 @@ var name = "";
 
 var i;
 for (i = 0; i < names.length; i++) {
+<<<<<<< HEAD
     name += names[i] + '\n';
     
      
     
 }
+=======
+    name += names[i] + "<br>";
+   
+ }
+>>>>>>> f9eaba0e52ccbb3e5694013c587dc9e8d5acf4af
 
 
 
@@ -79,8 +85,32 @@ for (i = 0; i < names.length; i++) {
   // to lower case character 'j' afterwards.
   // Look up these methods on Mozilla Developer Network web site if needed.
   
+<<<<<<< HEAD
   var firstLetter = name.charAt(0).toLowerCase();  
   
+=======
+  
+  
+  function first (item, index){
+
+  var firstLetter = item.charAt(0).toLowerCase();
+
+    if (firstLetter == 'j') {
+     return byeSpeaker + "<br>";
+} else { 
+    return helloSpeaker + "<br>";
+}
+
+
+    
+  }
+
+  names.forEach(first);
+
+  //var tipo = typeof names;
+
+  //console.log(tipo);
+>>>>>>> f9eaba0e52ccbb3e5694013c587dc9e8d5acf4af
   
 
   // STEP 12:
@@ -102,6 +132,10 @@ for (i = 0; i < names.length; i++) {
   
 
 
+<<<<<<< HEAD
+=======
+window.name = name[i]
+>>>>>>> f9eaba0e52ccbb3e5694013c587dc9e8d5acf4af
 
 })(window);
 
