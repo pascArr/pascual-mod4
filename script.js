@@ -34,10 +34,11 @@ WARNING!!! WARNING!!!
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
 
+
 (function(window){
 
 
-
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
 
 // STEP 10:
@@ -51,26 +52,20 @@ WARNING!!! WARNING!!!
 // AND RETURN THE FIRST LETTER OF EACH NAME AS LOWER CASE
 var name = "";
 
-var firstLetter = "" ;
+
 
 var i;
 for (i = 0; i < names.length; i++) {
-    name += names[i] + "<br>";
-   
-    firstLetter += names[i].charAt(0).toLowerCase() + "<br>";
+    name += names[i] + '\n';
+    
+     
+    
 }
 
 
 
 // TO RETURN RESULT CHOOSE WINDOW OR CONSOLE
 // END OF THE SNIPPET
-
-
-//console.log(window.helloSpeaker);
-
-//console.log(window.byeSpeaker);
-
-console.log(name);
 
 
 
@@ -84,10 +79,8 @@ console.log(name);
   // to lower case character 'j' afterwards.
   // Look up these methods on Mozilla Developer Network web site if needed.
   
-
-  //var firstLetter = name.charAt(0).toLowerCase();
-
-  console.log(firstLetter);
+  var firstLetter = name.charAt(0).toLowerCase();  
+  
   
 
   // STEP 12:
@@ -96,16 +89,19 @@ console.log(name);
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
 
+  
+    if (firstLetter === 'j') {
+      byeSpeaker.speak(name);
+        return window.name = name;
+  } else {
+      helloSpeaker.speak(name);
+        return window.name = name;
+        
+  }
+
+  
 
 
-//  if (/* fill in condition here */) {
-    // byeSpeaker.xxxx
-//  } else {
-    // helloSpeaker.xxxx
-//  }
-//}
-
-window.name = name
 
 })(window);
 
