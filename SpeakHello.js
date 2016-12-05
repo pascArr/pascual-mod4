@@ -21,7 +21,7 @@ var speakWord = "Hello";
 
 
 	helloSpeaker.speak = function (name) {
-		console.log(speakWord + " " + name + '\n');
+		console.log(speakWord + " " + name );
 
 }
 
@@ -32,7 +32,7 @@ var speakWord = "Hello";
 // (Note, Step 6 will be done in the SpeakGoodBye.js file.)
 
 
-	window.helloSpeaker = helloSpeaker.speak;
+	window.helloSpeaker = helloSpeaker;
 	
 
 

@@ -35,21 +35,12 @@ WARNING!!! WARNING!!!
 // (Note, Step 2 will be done in the SpeakHello.js file.)
 
 
-(function(window){
+(function(){
 
 
-var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+var names = ["Yaakov", "John", "Jen", 
+"Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
-
-// STEP 10:
-// Loop over the names array and say either 'Hello' or "Good Bye"
-// using the 'speak' method or either helloSpeaker's or byeSpeaker's
-// 'speak' method.
-// See Lecture 50, part 1
-
-
-// THIS PIECE OF CODE WORKS AS BASIC STRUCTURE FOR LOOP OVER LIST OF NAMES
-// AND RETURN THE FIRST LETTER OF EACH NAME AS LOWER CASE
 var name = "";
 
 var firstLetter = "";
@@ -58,23 +49,18 @@ var i;
 
 for (i = 0; i < names.length; i++) {
 
-    name = names[i] + '\n';
-
-    firstLetter = name.charAt() + '\n';
-
-
-    
-    
-  
-    
-
-
-
-// TO RETURN RESULT CHOOSE WINDOW OR CONSOLE
-// END OF THE SNIPPET
-
-
-
+    name = names[i];
+    firstLetter = names[i].charAt();
+    var vogal = firstLetter.toLowerCase(); 
+      if (vogal != "j"){
+       helloSpeaker;
+       return 
+      } else {
+       byeSpeaker;
+       return 
+             }    }   
+   })();      
+       
 
 
   // STEP 11:
@@ -85,27 +71,14 @@ for (i = 0; i < names.length; i++) {
   // to lower case character 'j' afterwards.
   // Look up these methods on Mozilla Developer Network web site if needed.
 
- 
-  var vogal = firstLetter.toLowerCase();
-   
-
-    if((vogal == "j")){
-      
-        return byeSpeaker.speak;
-
-         
-    } else { 
-
-        return helloSpeaker.speak;
-       
-
-         
-}
-   
-} 
-
-
   
+      
+    
+  
+    
+    
+   
+ 
 
   // STEP 12:
   // Compare the 'firstLetter' retrieved in STEP 11 to lower case
@@ -113,11 +86,10 @@ for (i = 0; i < names.length; i++) {
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
 
-  
-
-window.name = name
 
 
-})(window);
+  //window.name = name;
+
+
 
 
