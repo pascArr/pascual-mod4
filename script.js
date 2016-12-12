@@ -35,6 +35,7 @@ WARNING!!! WARNING!!!
 // (Note, Step 2 will be done in the SpeakHello.js file.)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 (function(){
 
@@ -48,6 +49,8 @@ var firstLetter = "";
 
 var i;
 =======
+=======
+>>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
 // STEP 10:
 // Loop over the names array and say either 'Hello' or "Good Bye"
 // using the 'speak' method or either helloSpeaker's or byeSpeaker's
@@ -73,6 +76,9 @@ var i;
 // string object's 'toLowerCase' method on the result so we can compare
 // to lower case character 'j' afterwards.
 // Look up these methods on Mozilla Developer Network web site if needed.
+<<<<<<< HEAD
+>>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
+=======
 >>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
 
 for (i = 0; i < names.length; i++) {
@@ -92,6 +98,7 @@ for (i = 0; i < names.length; i++) {
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   // STEP 11:
   // Retrieve the first letter of the current name in the loop.
   // Use the string object's 'charAt' function. Since we are looking for
@@ -109,6 +116,8 @@ for (i = 0; i < names.length; i++) {
    
  
 =======
+=======
+>>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
 // STEP 12:
 // Compare the 'firstLetter' retrieved in STEP 11 to lower case
 // 'j'. If the same, call byeSpeaker's 'speak' method with the current name
@@ -125,6 +134,7 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 var name = "";
 
 var i;
+<<<<<<< HEAD
 
 for (i = 0; i < names.length; i++) {
 >>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
@@ -133,6 +143,13 @@ for (i = 0; i < names.length; i++) {
 
 <<<<<<< HEAD
 =======
+=======
+
+for (i = 0; i < names.length; i++) {
+
+    name = names[i];
+
+>>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
     var firstLetter = name.charAt(0);  
   
   if (firstLetter.toLowerCase() == 'j') {
@@ -142,6 +159,7 @@ for (i = 0; i < names.length; i++) {
         
       }
 }
+<<<<<<< HEAD
 >>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
 
 
@@ -150,6 +168,13 @@ for (i = 0; i < names.length; i++) {
 
 <<<<<<< HEAD
 =======
+})();
+>>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
+=======
+
+
+
+
 })();
 >>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
 

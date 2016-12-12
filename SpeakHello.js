@@ -17,12 +17,15 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	helloSpeaker.speak = function (name) {
 		console.log(speakWord + " " + name );
 
 }
 
 
+=======
+>>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
 =======
 >>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
 // STEP 5: Expose the 'helloSpeaker' object to the global scope. Name it
@@ -32,9 +35,12 @@
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	window.helloSpeaker = helloSpeaker;
 	
 =======
+=======
+>>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
 (function(window){
 
 var helloSpeaker = {};
@@ -44,6 +50,9 @@ var speakWord = "Hello";
 helloSpeaker.speak = function (name) {
 	console.log(speakWord + " " + name + '\n') ;
 }
+<<<<<<< HEAD
+>>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
+=======
 >>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
 
 window.helloSpeaker = helloSpeaker.speak;
