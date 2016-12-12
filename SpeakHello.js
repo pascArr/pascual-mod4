@@ -16,44 +16,30 @@
 // See Lecture 52, part 2
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-	helloSpeaker.speak = function (name) {
-		console.log(speakWord + " " + name );
 
-}
+//	helloSpeaker.speak = function (name) {
+//		console.log(speakWord + " " + name );
 
+//}
 
-=======
->>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
-=======
->>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
 // STEP 5: Expose the 'helloSpeaker' object to the global scope. Name it
 // 'helloSpeaker' on the global scope as well.
 // See Lecture 52, part 2
 // (Note, Step 6 will be done in the SpeakGoodBye.js file.)
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-	window.helloSpeaker = helloSpeaker;
+
+	//window.helloSpeaker = helloSpeaker;
 	
-=======
-=======
->>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
-(function(window){
+	(function(window){
 
-var helloSpeaker = {};
+	var helloSpeaker = {};
 
-var speakWord = "Hello";
+	var speakWord = "Hello";
 
-helloSpeaker.speak = function (name) {
-	console.log(speakWord + " " + name + '\n') ;
+	helloSpeaker.speak = function (name) {
+		console.log(speakWord + " " + name + '\n') ;
 }
-<<<<<<< HEAD
->>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
-=======
->>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
 
 window.helloSpeaker = helloSpeaker.speak;
 

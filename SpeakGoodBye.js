@@ -18,26 +18,22 @@
 // See Lecture 52, part 2
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-	byeSpeaker.speak = function (name) {
-		console.log(speakWord + " " + name );
-
-}
+	//byeSpeaker.speak = function (name) {
+	//	console.log(speakWord + " " + name );
 
 // STEP 9: Expose the 'byeSpeaker' object to the global scope. Name it
 // 'byeSpeaker' on the global scope as well.
 
-	window.byeSpeaker = byeSpeaker;
-=======
+	//window.byeSpeaker = byeSpeaker;
+
 // STEP 9: Expose the 'byeSpeaker' object to the global scope. Name it
 // 'byeSpeaker' on the global scope as well.
 
-=======
+
 // STEP 9: Expose the 'byeSpeaker' object to the global scope. Name it
 // 'byeSpeaker' on the global scope as well.
 
->>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
+
 
 (function (window){
 
@@ -50,9 +46,5 @@ byeSpeaker.speak = function (name) {
 }
 
 window.byeSpeaker = byeSpeaker.speak;
-<<<<<<< HEAD
->>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
-=======
->>>>>>> 5c4ea184a5493dd39744361719cbe7e04d00af2c
-	
+
 })(window);
